@@ -1,0 +1,55 @@
+.rating-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.stars {
+  display: flex;
+  gap: 5px;
+}
+
+.star {
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s, text-shadow 0.2s;
+}
+
+.star.filled {
+  color: #00ff00;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+.star:hover {
+  color: #00ff00;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+.submit-button {
+  padding: 8px 16px;
+  background-color: transparent;
+  color: #00ff00;
+  border: 2px solid #00ff00;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-shadow: 0 0 5px #00ff00;
+  box-shadow: 0 0 5px #00ff00;
+}
+
+.submit-button:hover {
+  background-color: rgba(0, 255, 0, 0.1);
+  box-shadow: 0 0 10px #00ff00;
+}
+
+.submit-button:disabled {
+  background-color: transparent;
+  border-color: #333;
+  color: #333;
+  cursor: not-allowed;
+  box-shadow: none;
+  text-shadow: none;
+}
